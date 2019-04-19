@@ -1,0 +1,504 @@
+<<<<<<< HEAD
+body {
+	margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+
+header {
+  position: relative;
+  max-width: 1200px;
+  background: #94B8FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 5px #888888;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-left: 70px;
+  /* #94B8FF - light blue*/
+}
+
+/*For the title in navigation bar*/
+.navbar-brand {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Carter One', cursive;
+  color: #001a4d;
+}
+
+nav {
+  float: right;
+  margin-right: 50px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+/*all the listed items in the navbar*/
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/*for each single navbar item*/
+.nav-item {
+  list-style: none;
+
+}
+
+.nav-link {
+  display: block;
+  margin: 5px 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: 'Baloo', cursive;
+  font-size: 22px;
+  font-weight: 300;
+  color: #54636e;
+  margin-top: 0px;
+}
+
+.nav-link.active,
+.nav-link:hover{
+  /*background: #ecb401;*/
+  background: #996600;
+  color: #f4f4f4;
+  border-radius: 3px;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+
+
+@media (max-width: 1200px)
+{
+  header
+  {
+    margin: 20px;
+  } 
+}
+
+@media (max-width: 768px)
+{
+  .navbar-brand
+  {
+    font-size: 35px;
+  }
+  .menu-toggle
+  {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: #ccc;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+  }
+  .menu-toggle:before
+  {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .menu-toggle.active:before
+  {
+    content: '\f00d';
+  }
+  .navbar
+  {
+    display: none;
+  }
+  nav.active
+  {
+    display: block;
+    width: 80%;
+  }
+  nav.active.nav-item
+  {
+    display: block;
+  }
+  nav.active.nav-link
+  {
+    margin: 0;
+  }
+  
+}
+
+@media (max-width: 650px)
+{
+  .navbar-brand
+  {
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 480px)
+{
+  .navbar-brand
+  {
+    font-size: 15px;
+  }
+
+}
+
+.carousel{
+  margin-top:20px;
+  margin-left: 40px;
+  margin-right: 80px;
+}
+
+.carousel-inner{
+  margin-left: 225px;
+  height: 50%;
+  width: 50%;
+}
+
+.carousel-caption{
+  font-size: 15px;
+  background-color: #696969;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+
+}
+
+footer{
+  margin-top: 20px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+}
+
+
+
+
+
+
+/*
+Font Ideas
+
+Bold idea for links!
+Baloo - <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"> 
+font-family: 'Baloo', cursive;
+
+Simple look for links
+Chelsea Market - <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet"> 
+font-family: 'Chelsea Market', cursive;
+
+
+Title
+Carter One - <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet"> 
+font-family: 'Carter One', cursive;
+
+Descriptions
+Easy to read and natural
+Averia Serif Libre - <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet"> 
+font-family: 'Averia Serif Libre', cursive;
+
+Descriptions
+Thin hand writing
+Delius - <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet"> 
+font-family: 'Delius', cursive;
+
+Simple for descriptions of pieces
+Londrina Solid - <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet"> 
+font-family: 'Londrina Solid', cursive;
+
+very interesting font for small descriptions or my bio
+Cormorant Upright - <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet"> 
+font-family: 'Cormorant Upright', serif;
+
+
+Quotes
+Courgette - <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+font-family: 'Courgette', cursive;
+
+BIO
+Cutive - <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet"> 
+font-family: 'Cutive', serif;
+
+
+Cool Font
+Shojumaru - <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet"> 
+font-family: 'Shojumaru', cursive;
+
+Spooky
+Nosifer - <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet"> 
+font-family: 'Nosifer', cursive;
+
+Bold paint like font
+Chela One - <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet"> 
+font-family: 'Chela One', cursive;
+
+good cursive font
+Olea Script - <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+font-family: 'Oleo Script', cursive;
+
+simple and bold
+Changa One - <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet"> 
+font-family: 'Changa One', cursive;
+=======
+body {
+	margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+}
+
+header {
+  position: relative;
+  max-width: 1200px;
+  background: #94B8FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 5px #888888;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-left: 70px;
+  /* #94B8FF - light blue*/
+}
+
+/*For the title in navigation bar*/
+.navbar-brand {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Carter One', cursive;
+  color: #001a4d;
+}
+
+nav {
+  float: right;
+  margin-right: 50px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+/*all the listed items in the navbar*/
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/*for each single navbar item*/
+.nav-item {
+  list-style: none;
+
+}
+
+.nav-link {
+  display: block;
+  margin: 5px 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: 'Baloo', cursive;
+  font-size: 22px;
+  font-weight: 300;
+  color: #54636e;
+  margin-top: 0px;
+}
+
+.nav-link.active,
+.nav-link:hover{
+  /*background: #ecb401;*/
+  background: #996600;
+  color: #f4f4f4;
+  border-radius: 3px;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+
+
+@media (max-width: 1200px)
+{
+  header
+  {
+    margin: 20px;
+  } 
+}
+
+@media (max-width: 768px)
+{
+  .navbar-brand
+  {
+    font-size: 35px;
+  }
+  .menu-toggle
+  {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: #ccc;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+  }
+  .menu-toggle:before
+  {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .menu-toggle.active:before
+  {
+    content: '\f00d';
+  }
+  .navbar
+  {
+    display: none;
+  }
+  nav.active
+  {
+    display: block;
+    width: 80%;
+  }
+  nav.active.nav-item
+  {
+    display: block;
+  }
+  nav.active.nav-link
+  {
+    margin: 0;
+  }
+  
+}
+
+@media (max-width: 650px)
+{
+  .navbar-brand
+  {
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 480px)
+{
+  .navbar-brand
+  {
+    font-size: 15px;
+  }
+
+}
+
+.carousel{
+  margin-top:20px;
+  margin-left: 40px;
+  margin-right: 80px;
+}
+
+.carousel-inner{
+  margin-left: 225px;
+  height: 50%;
+  width: 50%;
+}
+
+.carousel-caption{
+  font-size: 15px;
+  background-color: #696969;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+
+}
+
+footer{
+  margin-top: 20px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+}
+
+
+
+
+
+
+/*
+Font Ideas
+
+Bold idea for links!
+Baloo - <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"> 
+font-family: 'Baloo', cursive;
+
+Simple look for links
+Chelsea Market - <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet"> 
+font-family: 'Chelsea Market', cursive;
+
+
+Title
+Carter One - <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet"> 
+font-family: 'Carter One', cursive;
+
+Descriptions
+Easy to read and natural
+Averia Serif Libre - <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet"> 
+font-family: 'Averia Serif Libre', cursive;
+
+Descriptions
+Thin hand writing
+Delius - <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet"> 
+font-family: 'Delius', cursive;
+
+Simple for descriptions of pieces
+Londrina Solid - <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet"> 
+font-family: 'Londrina Solid', cursive;
+
+very interesting font for small descriptions or my bio
+Cormorant Upright - <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet"> 
+font-family: 'Cormorant Upright', serif;
+
+
+Quotes
+Courgette - <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+font-family: 'Courgette', cursive;
+
+BIO
+Cutive - <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet"> 
+font-family: 'Cutive', serif;
+
+
+Cool Font
+Shojumaru - <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet"> 
+font-family: 'Shojumaru', cursive;
+
+Spooky
+Nosifer - <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet"> 
+font-family: 'Nosifer', cursive;
+
+Bold paint like font
+Chela One - <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet"> 
+font-family: 'Chela One', cursive;
+
+good cursive font
+Olea Script - <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+font-family: 'Oleo Script', cursive;
+
+simple and bold
+Changa One - <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet"> 
+font-family: 'Changa One', cursive;
+>>>>>>> 24648a08a5f969c6d80f2d7f758847f81e301d2c
+*/
